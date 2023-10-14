@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code to Landing Page</title>
+</head>
+<body>
+    <img id="qr-code" src="" alt="QR Code">
+    <script src="https://cdn.rawgit.com/neocotic/qrious/v4.0.2/dist/qrious.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var qr = new QRious({
+                element: document.getElementById('qr-code'),
+                value: 'https://github.com/AviralBansal01/QR/blob/master-branch/LAND.html'
+            });
+        });
+    </script>
+</body>
+</html>
